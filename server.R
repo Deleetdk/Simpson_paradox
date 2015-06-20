@@ -57,7 +57,8 @@ shinyServer(function(input, output) {
     ggplot(d, aes(x, y)) +
       geom_point(aes(color = group)) +
       geom_smooth(method = "lm", se = F, color = "black", linetype = "dashed") +
-      geom_smooth(aes(group = group, color = group), method = "lm", se = F, linetype = "dashed", fullrange = T)
+      geom_smooth(aes(group = group, color = group), method = "lm", se = F, linetype = "dashed", fullrange = T) +
+      xlab("X") + ylab("Y")
     
   })
 
