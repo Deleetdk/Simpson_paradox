@@ -8,6 +8,7 @@
 library(shiny)
 library(ggplot2)
 library(plyr)
+theme_set(theme_bw())
 
 shinyServer(function(input, output) {
   
